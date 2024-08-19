@@ -40,6 +40,19 @@ header {
   font-family: Tahoma;
 }
 
+a:link{
+  color: rgb(181, 110, 166)
+}
+a:visited{
+  color: rgb(197, 177, 192)
+}
+a:hover{
+  color: rgb(197, 177, 192)
+}
+a:active{
+  color: rgb(83, 43, 74)
+}
+
 h1 {
   color: hsl(271, 19%, 34%);
   text-align: right;

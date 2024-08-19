@@ -53,6 +53,10 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     }
     
     error.textContent = message;
+
+    document.getElementById(inputId).style.borderColor = "red";
+    document.getElementById(inputId).style.backgroundColor = "#ffe6e6";
+  
   }
   
   const imageLinks = [
