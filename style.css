@@ -2,56 +2,40 @@ body {
   background-color: hsl(128, 21%, 72%);
   margin: 0;
   padding: 0;
-  /* border: 5px solid rgb(156, 100, 212); */
-  /* display:flex ; */
 }
 
 header {
   background-color: hsla(162, 27%, 19%, 1);
-  margin: 0px;
-  padding: 0px;
-  /* border: 5px solid blue; */
-  height: px;
+  margin: 0;
+  padding: 0;
+  height: 215px;
+}
+
+#headerImage{
+  position: absolute;
+  right: 0;
+  top:0
 }
 
 .navbar {
-  /* border: 5px solid blue; */
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
   padding: 10px;
   background-color: hsla(162, 27%, 19%, 1);
-  /* border: 5px solid blue; */
-  
-
 }
 
 .navbar ul {
-  /* border: 5px solid palevioletred; */
   list-style-type: none;
   font-size: 2em;
   font-family: sans-serif;
   display: flex;
-  justify-content: flex-end;
   justify-content: space-between;
-  align-items: center;
-}
-.navbar ul {
   margin: 0;
+  padding: 0;
 }
 
-/* ul{
-        padding: 0;
-        border: 5px solid black;
-        margin
-    } */
-
-.nav-list li {
-  justify-content: right;
-}
-
-li {
-  /* color: hsl(271, 19%, 34%); */
+.navbar li {
   color: rgba(241, 247, 237, 1);
   font-family: Tahoma;
 }
@@ -65,19 +49,60 @@ h1 {
 h2 {
   font-size: 25px;
   color: hsl(271, 19%, 34%);
-  /* color: hsl(96, 38%, 95%); */
   text-align: center;
 }
 
 p {
   text-align: center;
   font-size: 20px;
-  color: rgba(241, 247, 237, 1);
+  color: rgb(132, 112, 132);
 }
 
-.gallery {
+.flower {
   display: inline-block;
   border: 1px solid hsl(162, 27%, 19%);
   margin: 5px;
-  align-items: center;
+  text-align: center;
+}
+
+.flower-src {
+  width: 100px;
+  margin: 10px;
+}
+
+.footer-image {
+  width: 100%;
+  height: auto;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+button {
+  background-color: hsl(271, 19%, 34%); 
+  color: white; 
+  border: none; 
+  border-radius: 5px; 
+  padding: 10px 20px; 
+  font-size: 1em; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: hsl(271, 19%, 24%); 
+  transform: scale(1.05); 
+}
+
+button:focus {
+  outline: 2px solid hsl(162, 27%, 19%); 
+  outline-offset: 2px;
+}
+
+#clickMe1, #clickMe2, #clickMe3 {
+  border-radius: 10px;
+  background-color: hsl(270, 11%, 62%);
+  margin: 10px; 
+
 }

@@ -1,63 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <ul>
-          <li><a id= "src" href= "./index.html">Home</a></li>
-          <li><a id= "src" href= "./items.html">Plants</a></li>
-          <li><a id= "src" href= "./contacts.html">Contact</a></li>
-          <li><img src= "./violet daisy Small copy.jpeg" alt= "Purple daisy" id= "headerImage"/>
-          </li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a id="src1" href="./index.html">Home</a></li>
+        <li><a id="src2" href="./items.html">Plants</a></li>
+        <li><a id="src3" href="./contacts.html">Contact</a></li>
+        <li><img src="./images/violet daisy Small copy.jpeg" alt="Purple daisy" id="headerImage"></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="mainSection">
-      <h1>Home</h1>
+  <section id="mainSection">
+    <h1>Home</h1>
 
-      <form>
-        <div id= "myForm">
-          <label for="uname">Username:</label>
-          <input type="text" id="uname" name="uname" required  />
-          <br>
-          <label for= "pword">Password:</label>
-          <input type= "password" id="pword" name="pword" required />
-          <button type= "submit">Submit</button>
-        </div>
-      </form>
-      <br />
-      <h2>Love is in the air!!</h2>
-      <p id = "p1">Are you a lover of all things plants? <br />Well so am I! Even if you
-        are new to all <br />of this Garden Gnome can get you started off right!
-      </p>
-      <input type="button" value="Click me!" id="clickMe" />
+    <form id="myForm">
+      <div>
+        <label for="uname">Username:</label>
+        <input type="text" id="uname" name="uname" required />
+        <br>
+        <label for="pword">Password:</label>
+        <input type="password" id="pword" name="pword" required />
+        <button type="submit">Submit</button>
+      </div>
+    </form>
 
-      <h2>Let's plant!</h2>
-      <p id = "p2"> We will teach you everything you need to know. 
-      </p>
-      <input type="button" value="Click me!" id="clickMe" />
+    <br/>
+    <div id= "pSection">
+     <h2>Love is in the air!!</h2>
+        <p id="p1">Are you a lover of all things plants? <br />Well so am I! Even if you are new to all <br />of this Garden Gnome can get you started off right!</p>
+        <input type="button" value="Click me!"  class="update-text-button" data-section="p1"/>
 
-      <h2>Grow grow grow!</h2>
-      <p id = "p3">
-        Together we can watch your indoor and/or outdoor garden grow with.
-      </p>
-      <input type="button" value="Click me!" id="clickMe" />
+     <h2>Let's plant!</h2>
+        <p id="p2">We will teach you everything you need to know.</p>
+        <input type="button" value="Click me!"  class="update-text-button" data-section="p2"/>
 
-    </section>
+    <h2>Grow grow grow!</h2>
+    <p id="p3">Together we can watch your indoor and/or outdoor garden grow.</p>
+    <input type="button" value="Click me!"  class="update-text-button" data-section="p3"/>
+  </div>
 
-    <section id="favoriteFlowerSection"></section>
+  <section id="favoriteFlowerSection"></section>
 
-    <footer>
-      <img src="./floralfloor copy.jpg" alt="A garden" class="footer-image" />
-    </footer>
+  <footer>
+    <img src="./images/floralfloor copy.jpg"" alt="A garden" class="footer-image" />
+  </footer>
 
-    <script src="./index.js"></script>
-  </body>
+  <script src="./index.js"></script>
+</body>
 </html>
