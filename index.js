@@ -23,75 +23,44 @@ function handleNavClick(event) {
 document.querySelectorAll('.update-text-button').forEach(button => {
     button.addEventListener('click', updateTextFromButton);
   });
-  
-  
-//   function updateText(pSection) {
-
-//   document.getElementById('clickMe1').addEventListener('click', () => updateText('p1'));
-//   document.getElementById('clickMe2').addEventListener('click', () => updateText('p2'));
-//   document.getElementById('clickMe3').addEventListener('click', () => updateText('p3'));
-  
-// //   function updateText(pSection) {
-//     const button = document.getElementById(pSection);
-//     if (paragraph) {
-//       paragraph.textContent = texts[pSection] || "";
-//     }
-// }
-  
-  
-//   function changeContent() {
-//     const button = document.getElementById(pSection);
-//      if (paragraph) {
-//       paragraph.textContent = texts[pSection] || "";
-
-    // }
-    // }
-
 
   // Handle form submission with validation
-  document.getElementById("myForm").addEventListener("submit", function (event) {
-    event.preventDefault();
-    document.querySelectorAll(".error").forEach((el) => el.remove());
+document.getElementById("myForm").addEventListener("submit", function (event) {
+    event.preventDefault(); 
+  
+    document.querySelectorAll(".error").forEach(el => el.remove());
   
     const username = document.getElementById("uname").value.trim();
     const password = document.getElementById("pword").value;
   
-    let isValid = true;
-  
     if (password.length < 6) {
-      createError("pword", "Password must be at least 6 characters long.");
-      isValid = false;
+      showError("pword", "Password must be at least 6 characters long.");
+      return; 
     }
   
-    if (isValid) {
-      console.log("Username:", username);
-      console.log("Password:", password);
-    }
+    console.log("Username:", username);
+    console.log("Password:", password);
   });
   
-  // Function to create and display error messages
-  function createError(inputId, message) {
+  function showError(inputId, message) {
     const inputField = document.getElementById(inputId).parentNode;
     let error = inputField.querySelector(".error");
   
-    if (error) {
-      error.textContent = message;
-    } else {
+    if (!error) {
       error = document.createElement("div");
-      error.textContent = message;
       error.className = "error";
       inputField.appendChild(error);
     }
+    
+    error.textContent = message;
   }
   
-  // Define image links for favorite flowers
   const imageLinks = [
-    { src: "succulent Small.jpeg", name: "A lovely succulent." },
-    { src: "palm Small Small.jpeg", name: "A beautiful palm." },
-    { src: "monstera Small.jpeg", name: "A gorgeous monstera." },
+    { src: "sba folder/succulent Small.jpeg", name: "A lovely succulent." },
+    { src: "sba folder/friendship plant Small.jpeg", name: "A cute friendship pl." },
+    { src: "sba folder/hosta Small.jpeg", name: "A gorgeous hosta." },
   ];
   
-  // Function to generate HTML for each flower
   function flowerTemplate({ src, name }) {
     return `
       <div class="flower">
@@ -101,7 +70,6 @@ document.querySelectorAll('.update-text-button').forEach(button => {
     `;
   }
   
-  // Populate the favoriteFlowerSection with flower information
   document.getElementById("favoriteFlowerSection").innerHTML = `
     <h3 class="favoriteFlowerSection-title">Favorite Flowers (${imageLinks.length} results)</h3>
     ${imageLinks.map(flowerTemplate).join("")}

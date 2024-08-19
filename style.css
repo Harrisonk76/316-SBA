@@ -100,9 +100,8 @@ button:focus {
   outline-offset: 2px;
 }
 
-#clickMe1, #clickMe2, #clickMe3 {
+.update-text-button{
   border-radius: 10px;
   background-color: hsl(270, 11%, 62%);
   margin: 10px; 
-
 }
