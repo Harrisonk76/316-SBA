@@ -14,20 +14,40 @@
         <li><a id="src2" href="./items.html">Plants</a></li>
         <li><a id="src3" href="./contacts.html">Contact</a></li>
         <li><img src="./images/violet daisy Small copy.jpeg" alt="Purple daisy" id="headerImage"></li>
-      </ul>
     </nav>
   </header>
 
-  <section id="mainSection">
-    <h1>Home</h1>
+  <!-- <section id="mainSection">
+    <label for=" menu-items">menu-items</label>
+     -->
+    
+    <div class="dropdown">
+        <button>Menu</button>
+    </div>
+    <div 
+        class="dropdown-content">   
+            <a rel="noopener" target="_blank" href="#">Home</a>
+            <a rel="noopener" target="_blank" href="#">About Us</a>
+            <a rel="noopener" target="_blank" href="#">Our Services</a>
+            <a rel="noopener" target="_blank" href="#">The scoop</a>
+    </div>
+          
+    </ul>
+        
+  
+    </div>
+
 
     <form id="myForm">
       <div>
         <label for="uname">Username:</label>
         <input type="text" id="uname" name="uname" required />
         <br>
+        <br>
         <label for="pword">Password:</label>
         <input type="password" id="pword" name="pword" required />
+        <br>
+        <br>
         <button type="submit">Submit</button>
       </div>
     </form>
